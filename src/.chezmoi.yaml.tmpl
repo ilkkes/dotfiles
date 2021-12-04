@@ -67,7 +67,7 @@
 {{- if hasKey . "email_work" -}}
 {{-   $email_work = .email_work -}}
 {{- else if $interactive -}}
-{{-   $email_work = promptString "email" -}}
+{{-   $email_work = promptString "email_work" -}}
 {{- end -}}
 
 {{- if $interactive -}}
